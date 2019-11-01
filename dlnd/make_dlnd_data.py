@@ -8,7 +8,7 @@ import time
 import sys
 import xml.etree.ElementTree as ET
 
-sys.path.append("../infersent/")
+sys.path.append("../sentence_encoder/")
 
 def cumulative(arr):
 	for i in range(len(arr)-1):
@@ -32,7 +32,7 @@ if __name__=="__main__":
 
 	source_sentences = [sent for doc in sources for sent in doc]
 	print("loading infersent...")
-	infersent = torch.load("../infersent/encoder/model_2048_attn.pickle")
+	sentence_encoder = torch.load("../sentence_encoder/encoder/model_2048_attn.pickle")
 	infersent.set_glove_path("../../glove.840B.300d.txt")
 	print("Infersent started!!")
 	start=time.time()
@@ -44,7 +44,7 @@ if __name__=="__main__":
 
 	target_sentences = [sent for doc in targets for sent in doc]
 	print("loading infersent...")
-	infersent = torch.load("../infersent/encoder/model_2048_attn.pickle")
+	sentence_encoder = torch.load("../sentence_encoder/encoder/model_2048_attn.pickle")
 	infersent.set_glove_path("../../glove.840B.300d.txt")
 	print("Infersent started!!")
 	start=time.time()
