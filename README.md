@@ -33,9 +33,9 @@ Description of important files in each directory
 
 ## DLND
 
-* make_dlnd_data.py:	Produces pre-trained sentence embeddings for dlnd data, dependency: /novelty/infersent directory must be present, dlnd corpus must be present. Creates a pickle file which contains the sentence embeddings.
+* extract_sentence_embedding.py:	Produces pre-trained sentence embeddings for dlnd data, dependency: ../infersent directory must be present, dlnd corpus must be present. Creates a pickle file which contains the sentence embeddings.
 
-* rdv.py:	Produces Relative document matrix based on sentence embeddings for input to CNN , input: name of pickle file which has sentence embeddings.
+* rdv.py:	Produces Relative document matrix based on sentence embeddings for input to CNN , input: name of pickle file which has sentence embeddings, this is hardcoded.
 
 * process.py:	Takes the rdv file and converts it to format which is suitable for input to CNN program, produces a mr_dlnd.p pickle file
 
