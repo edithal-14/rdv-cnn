@@ -4,10 +4,12 @@ Novelty Goes Deep. A Deep Neural Solution To Document Level Novelty Detection (C
 ABOUT
 -----------
 RDV-CNN model for document level novelty detection. Comparision of our model with baselines on three popular datasets:
-* TAP-DLND 1.0 (https://arxiv.org/abs/1802.06950)
-    - Download link: http://www.iitp.ac.in/~ai-nlp-ml/resources.html
-* Webis-CPC (https://www.uni-weimar.de/en/media/chairs/computer-science-department/webis/data/corpus-webis-cpc-11/)
-* APWSJ dataset (http://www.cs.cmu.edu/~yiz/research/NoveltyData/)
+* Original paper: https://www.aclweb.org/anthology/C18-1237/
+* Datasets used:
+    * TAP-DLND 1.0 (https://arxiv.org/abs/1802.06950)
+        - http://www.iitp.ac.in/~ai-nlp-ml/resources.html
+    * Webis-CPC:    https://www.uni-weimar.de/en/media/chairs/computer-science-department/webis/data/corpus-webis-cpc-11/
+    * APWSJ:        http://www.cs.cmu.edu/~yiz/research/NoveltyData/
 
 REQUIREMENTS
 -----------------
